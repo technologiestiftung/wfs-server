@@ -1,0 +1,45 @@
+{
+  "name": "wfs-server",
+  "version": "1.0.0",
+  "description": "WFS Download Server",
+  "main": "index.js",
+  "scripts": {
+    "lint": "tslint -p tslint.json --force",
+    "build": "tsc",
+    "typescript": "npm run lint && npm run build",
+    "watch": "nodemon "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/technologiestiftung/wfs-server.git"
+  },
+  "keywords": [
+    "wfs",
+    "server"
+  ],
+  "author": "sebastian-meier",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/technologiestiftung/wfs-server/issues"
+  },
+  "homepage": "https://github.com/technologiestiftung/wfs-server#readme",
+  "dependencies": {
+    "wfs_query": "^0.2.2"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "node_modules/*",
+      "dst/*"
+    ],
+    "watch":[
+      "src"
+    ],
+    "exec": "npm run typescript",
+    "ext": "ts"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9",
+    "tslint": "^5.12.1",
+    "typescript": "^3.2.2"
+  }
+}
