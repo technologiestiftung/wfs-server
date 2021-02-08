@@ -38,8 +38,8 @@
     "ext": "ts"
   },
   "devDependencies": {
-    "nodemon": "^1.18.9",
-    "tslint": "^5.12.1",
-    "typescript": "^3.2.2"
+    "nodemon": "1.18.9",
+    "tslint": "5.12.1",
+    "typescript": "3.2.2"
   }
 }
